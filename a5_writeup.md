@@ -23,12 +23,13 @@ After completing the assignment, answer the following reflection questions:
 
 1. How do the performance and efficiency of the Depth-First Search (DFS) and Breadth-First Search (BFS) algorithms compare when solving Sudoku puzzles? In what scenarios might one approach be preferable over the other?
 
-
+Both DFS and BFS were equal in efficiency for an easier board while DFS was more efficient on a more complex board. DFS would be more preferable if the solution would be within the first couple iterations into a branch rather than towards the end where it won't have to do every possible combination to get a solution. While BFS would benefit if the solution didn't require as many inputs and was shallow in the ability to find a solution quickly from the surface of the board it is solving for.
 
 2. How did the choice of data structures (like the Stack for DFS and Queue for BFS) impact the implementation and functionality of the algorithms? Are there alternative data structures or design patterns that could have been used to achieve the same objectives?
 
+DFS would be more effective on solving a board that has more choices while BFS would be better on a less complex board that can find a solution relatively quickly due to an answer being more obvious to choose from just like stated above in which DFS was more effiecient for a more complex board and BFS for a less complex board. An alternative data structure could be pushing a board within the middle of the list in which an algorithm could focus on doing half the board through a BFS kind of way to reduce the number of inputs. If a solution isn't found then it would move on to the other half of the board.
 
 
 3. Considering the current implementation, how might the Sudoku solver be adapted or extended for larger puzzles or different types of grid-based logic games? How can the lessons learned from this assignment be applied to real-world problem-solving or optimization challenges?
 
-
+ A game like Minesweeper would seem to probably benefit from BFS as the board doesn't necessarily seem complex so finding a solution wouldn't seem too deep. In a real world application, it might be beneficial to think about using a DFS type of method in solving a problem as there is never one right way to get an answer. Some ways to get an answer or easier than others. But there is almost always more than one way to complete any task.
